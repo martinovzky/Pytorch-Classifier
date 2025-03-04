@@ -15,11 +15,6 @@ val_transforms = transforms.Compose([
                          std=[0.229, 0.224, 0.225])
 ])
 
-# Unzip the Archive.zip file into the /content directory.
-# The -q flag suppresses verbose output.
-!unzip -q Archive.zip -d /content
-
-
 # assigns labels to images based on subfolder names (= class names)
 train_dataset = ImageFolder(root=train_dir, transform=train_transforms)
 val_dataset   = ImageFolder(root=test_dir, transform=val_transforms)
