@@ -1,0 +1,15 @@
+#download model with pretrained weights
+model = timm.create_model("efficientnet_b0", pretrained=True) 
+
+#adapts the model to classify images into NumClasses instead of the default 1000 ImageNet categories
+
+in_features = model.classifier.in_features             # number of input features for the classifier layer
+model.classifier = nn.Linear(in_features, NumClasses)  # replaces with a new linear layer
+
+model = model.to(device)
+
+#loss function
+criterion = nn.CrossEntropyLoss()
+
+#optimizer updates model weights during training
+optimizer = optim.Adam(model.parameters(), lr=LearningRate)
