@@ -19,7 +19,7 @@ This project fine-tunes **EfficientNet-B0** on the MIT Indoor Scenes dataset to 
 - **Optimizer**: Adam
 - **Batch Size**: *32*
 - **Learning Rate**: *1e-3*
-- **Epochs**: *10*
+- **Epochs**: *15*
 - **Validation Split**: *80/20*
 - **Hardware**: Google Colab (GPU acceleration enabled)
 
