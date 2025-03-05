@@ -18,3 +18,6 @@ with torch.no_grad():
 
 val_loss = val_loss / val_total #average validation loss
 val_acc = val_correct / val_total #average validation accuracy
+
+print(f"Validation Loss: {val_loss:.4f} | Validation Acc: {val_acc:.4f}")
+
