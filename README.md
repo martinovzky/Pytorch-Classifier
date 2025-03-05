@@ -23,4 +23,19 @@ This project fine-tunes **EfficientNet-B0** on the MIT Indoor Scenes dataset to 
 - **Validation Split**: *80/20*
 - **Hardware**: Google Colab (GPU acceleration enabled)
 
+## Installation & Usage
+
+### **Run in Google Colab (Recommended)**
+1. Open `Pytorch_Classifier.ipynb` in **Google Colab**.
+2. Enable **GPU**:  
+   - Go to `Runtime > Change runtime type > GPU`
+3. Follow the notebook instructions to train and validate the model.
+
+### **Run Locally**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/martinovzky/Pytorch-Classifier.git
+   cd Pytorch-Classifier
+
+
 
