@@ -28,4 +28,3 @@ for epochs in range(number_epochs):
   epoch_loss = running_loss / total_sampled            #average loss for the epoch
   epoch_acc  = correct_samples / total_sampled         #accuracy for the epoch
 
-  print(f"Epoch {epoch+1}/{NUM_EPOCHS} | Train Loss: {epoch_loss:.4f} | Train Acc: {epoch_acc:.4f}")
