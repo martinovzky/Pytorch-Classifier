@@ -36,6 +36,7 @@ This project fine-tunes **EfficientNet-B0** on the MIT Indoor Scenes dataset to 
    ```bash
    git clone https://github.com/martinovzky/Pytorch-Classifier.git
    cd Pytorch-Classifier
+   ```
 
 
 
