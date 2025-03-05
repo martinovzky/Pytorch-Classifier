@@ -1,2 +1,3 @@
-# Pytorch-Classifier
- I use the EfficientNet-b0 model, probably not the best for image recognition, will try other ones in future projects.
+# Indoor Scene Classification with EfficientNet-B0 
+## Overview
+This project fine-tunes **EfficientNet-B0** on the [MIT Indoor Scenes dataset] 
