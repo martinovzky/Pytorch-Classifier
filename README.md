@@ -34,7 +34,8 @@ This project fine-tunes **EfficientNet-B0** on the MIT Indoor Scenes dataset to 
    PS: the colab file features a lot of comments that I wrote for self learning :)
 
 ### **Run Locally**
-1. **Clone the repository**:
+1. Install [**PyTorch**](https://pytorch.org/get-started/locally/)
+2. **Clone the repository**:
    ```bash
    git clone https://github.com/martinovzky/Pytorch-Classifier.git
    cd Pytorch-Classifier
