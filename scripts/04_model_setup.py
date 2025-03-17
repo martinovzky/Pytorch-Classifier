@@ -13,8 +13,8 @@ model = model.to(device)
 criterion = nn.CrossEntropyLoss()
 
 #optimizer updates model weights during training
-optimizer = optim.Adam(model.parameters(), lr=LearningRate, weight_decay=WeightDecay)
+optimizer = optim.Adam(model.parameters(), lr=LearningRate)
 
 # learning rate schedule, reduces LR after every 5 epochs
-scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=Gamma)
+scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=4, gamma=Gamma)
 # after every 5 epochs, the LR is multiplied by gamma=0.1
