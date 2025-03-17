@@ -1,7 +1,7 @@
 # transformations for training and validation
 
 train_transforms = transforms.Compose([
-    transforms.Resize((224, 224)),             # resizes images to 224x224 pixels
+    transforms.Resize((224, 224)),             
     transforms.RandomHorizontalFlip(),         # randomly flips images horizontally for data augmentation
     transforms.RandomRotation(10),             # random rotation up to 10 degrees
     transforms.ColorJitter(                    # random changes in brightness/contrast/saturation/hue
@@ -14,7 +14,7 @@ train_transforms = transforms.Compose([
 ])
 
 val_transforms = transforms.Compose([
-    transforms.Resize((224, 224)),             # resizes images for consistency
+    transforms.Resize((224, 224)),             # training and validation size must be the same
     transforms.ToTensor(),                     # converts images to tensor, pixel values now between [0,1].
     transforms.Normalize(mean=[0.485, 0.456, 0.406],  # uses same normalization as training
                          std=[0.229, 0.224, 0.225])
