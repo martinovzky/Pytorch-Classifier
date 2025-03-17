@@ -8,7 +8,4 @@ from torchvision.datasets import ImageFolder # for batching and loading data
 import timm                                  # contains the models
 
 import matplotlib.pyplot as plt              # for data viz
-import pandas as pd
 import numpy as np
-import sys
-from tqdm.notebook import tqdm
