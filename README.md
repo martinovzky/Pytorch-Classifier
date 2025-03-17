@@ -30,6 +30,7 @@ This project fine-tunes **EfficientNet-B0** on the MIT Indoor Scenes dataset to 
 2. Enable **GPU**:  
    - Go to `Runtime > Change runtime type > GPU`
 3. Follow the notebook instructions to train and validate the model.
+   PS: the colab file features a lot of comments that I wrote for self learning :)
 
 ### **Run Locally**
 1. **Clone the repository**:
